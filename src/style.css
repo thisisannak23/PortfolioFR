@@ -1,38 +1,85 @@
-:root{
-  --primary-color:cornflowerblue;
-  --secondary-color: #F0A500;
-  --accent-color: #E45826;
-  --primary-font-family: 'Jost', sans-serif;
+:root {
+  --primary-color: cornflowerblue;
+  --secondary-color: #f0a500;
+  --accent-color: #e45826;
+  --heading-font-family: "Abril Fatface", cursive;
+  --subheading-font-family: "Zilla Slab", serif;
+  --primary-font-family: "Jost", sans-serif;
 }
 
-body{
-  background-color:cornflowerblue;
+body {
+  background-color: cornflowerblue;
 }
 
-h1{
-  font-family:'Zilla Slab', serif;
+h1 {
+  font-family: var(--subheading-font-family);
   font-weight: lighter;
 }
 
-h2{
-  font-family: 'Abril Fatface', cursive;
-  font-weight:100px;  
-
+h2 {
+  font-family: var(--heading-font-family);
+  font-weight: 100px;
+  font-size: 45px;
 }
 
-p{
-  font-family: var(--primary-font-family);
-  font-size: 20px;
-}
-
-.hero{
+.hero {
   text-align: center;
-  background-color:black;
+  background-color: black;
   color: white;
 }
 
-button{
-  background-color:var(--secondary-color);
+button {
+  background-color: var(--secondary-color);
+  font-family: var(--subheading-font-family);
+  font-weight: bold;
+}
+
+.pageBreak {
+  text-align: center;
   font-family: var(--primary-font-family);
-  font-weight:bold;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+.projects {
+  background-color: black;
+  font-family: var(--heading-font-family);
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.weatherPic,
+.potatoPic,
+.tptPic {
+  background-color: #e45826;
+  max-width: 200px;
+}
+
+.description {
+  font-family: var(--primary-font-family);
+  text-align: left;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400px;
+  color:white;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.clickHere {
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .weatherProject,
+  .potatoProject,
+  .tptProject {
+    text-align: center;
+  }
 }
