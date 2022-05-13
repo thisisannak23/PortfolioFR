@@ -1,0 +1,23 @@
+:root{
+
+}
+
+body{
+  background-color:cornflowerblue;
+}
+
+h1{
+  font-family: 'Zilla Slab', serif;
+
+}
+
+p{
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+}
+
+.welcome{
+  text-align: center;
+  background-color:black;
+  color:azure;
+}
