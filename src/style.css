@@ -1,5 +1,8 @@
 :root{
-
+  --primary-color:cornflowerblue;
+  --secondary-color: #F0A500;
+  --accent-color: #E45826;
+  --primary-font-family: 'Jost', sans-serif;
 }
 
 body{
@@ -7,17 +10,29 @@ body{
 }
 
 h1{
-  font-family: 'Zilla Slab', serif;
+  font-family:'Zilla Slab', serif;
+  font-weight: lighter;
+}
+
+h2{
+  font-family: 'Abril Fatface', cursive;
+  font-weight:100px;  
 
 }
 
 p{
-  font-family: 'Jost', sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 20px;
 }
 
-.welcome{
+.hero{
   text-align: center;
   background-color:black;
-  color:azure;
+  color: white;
+}
+
+button{
+  background-color:var(--secondary-color);
+  font-family: var(--primary-font-family);
+  font-weight:bold;
 }
