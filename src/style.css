@@ -28,7 +28,7 @@ h2 {
   color: white;
 }
 
-button {
+button, .btn {
   background-color: var(--secondary-color);
   font-family: var(--subheading-font-family);
   font-weight: bold;
