@@ -28,22 +28,44 @@ h2 {
   color: white;
 }
 
-.about h1 {
+.content h1 {
   font-size: 50px;
   line-height: 50px;
+  font-family:var(--subheading-font-family);
 }
 
-.about h2 {
-  font-size: 18px;
-  font-weight: 100px;
+.content h2 {
+  font-size: 40px;
+  font-weight: lighter;
 }
 
-.aboutSection {
+.content h3{
+  font-size:24px;
+  font-family: var(--heading-font-family);
+  line-height: 1.25;
+}
+
+.content p{
+  font-size:18px;
+  font-family:var(--primary-font-family)
+}
+
+.content-container {
   text-align: left;
+}
+
+.workHeading{
+  text-align:center;
 }
 
 .aboutPic {
   border-radius: 10px;
+}
+
+.screenshot{
+  border-radius: 10px;
+  border-color:#e45826;
+  border-width: 3px;
 }
 
 .personPic {
@@ -109,8 +131,8 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .about
-  .aboutSection{
+  .content,
+  .content-container{
     text-align: center;
   }
 }
