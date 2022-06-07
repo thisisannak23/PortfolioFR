@@ -28,7 +28,30 @@ h2 {
   color: white;
 }
 
-button, .btn {
+.about h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about h2 {
+  font-size: 18px;
+  font-weight: 100px;
+}
+
+.aboutSection {
+  text-align: left;
+}
+
+.aboutPic {
+  border-radius: 10px;
+}
+
+.personPic {
+  text-align: center;
+}
+
+.button,
+.btn {
   background-color: var(--secondary-color);
   font-family: var(--subheading-font-family);
   font-weight: bold;
@@ -40,6 +63,7 @@ button, .btn {
   font-size: 20px;
   color: white;
   background-color: black;
+  width: fit-content center;
 }
 
 .projects {
@@ -63,7 +87,7 @@ button, .btn {
   font-size: 20px;
   line-height: 22px;
   font-weight: 400px;
-  color:white;
+  color: white;
 }
 
 .title {
@@ -80,6 +104,13 @@ button, .btn {
   .weatherProject,
   .potatoProject,
   .tptProject {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about
+  .aboutSection{
     text-align: center;
   }
 }
