@@ -87,6 +87,7 @@ h2 {
   background-color: var(--secondary-color);
   font-family: var(--subheading-font-family);
   font-weight: bold;
+  font-size: 20px;
 }
 
 .pageBreak {
@@ -126,10 +127,6 @@ h2 {
   font-size: 32px;
   font-weight: lighter;
   text-align: center;
-}
-
-.clickHere {
-  font-size: 20px;
 }
 
 @media (max-width: 700px) {
