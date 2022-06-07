@@ -47,10 +47,14 @@ h2 {
 
 .content p{
   font-size:18px;
-  font-family:var(--primary-font-family)
+  font-family:var(--primary-font-family);
 }
 
-.content-container {
+.content-container{
+  text-align: center;
+}
+
+.about-container {
   text-align: left;
 }
 
@@ -62,10 +66,16 @@ h2 {
   border-radius: 10px;
 }
 
-.screenshot{
+.screenshot {
   border-radius: 10px;
-  border-color:#e45826;
+}
+
+.projectBg{
+  background-color:#e45826;
   border-width: 3px;
+  border-radius:10px;
+  color:black;
+  width:500px;
 }
 
 .personPic {
@@ -132,6 +142,7 @@ h2 {
 
 @media (max-width: 600px) {
   .content,
+  .about-container,
   .content-container{
     text-align: center;
   }
