@@ -31,7 +31,7 @@ h2 {
 .content h1 {
   font-size: 50px;
   line-height: 50px;
-  font-family:var(--subheading-font-family);
+  font-family: var(--subheading-font-family);
 }
 
 .content h2 {
@@ -39,18 +39,18 @@ h2 {
   font-weight: lighter;
 }
 
-.content h3{
-  font-size:24px;
+.content h3 {
+  font-size: 24px;
   font-family: var(--heading-font-family);
   line-height: 1.25;
 }
 
-.content p{
-  font-size:18px;
-  font-family:var(--primary-font-family);
+.content p {
+  font-size: 18px;
+  font-family: var(--primary-font-family);
 }
 
-.content-container{
+.content-container {
   text-align: center;
 }
 
@@ -58,8 +58,8 @@ h2 {
   text-align: left;
 }
 
-.workHeading{
-  text-align:center;
+.workHeading {
+  text-align: center;
 }
 
 .aboutPic {
@@ -70,20 +70,28 @@ h2 {
   border-radius: 10px;
 }
 
-.projectBg{
-  background-color:#e45826;
+.projectBg {
+  background-color: #e45826;
   border-width: 3px;
-  border-radius:10px;
-  color:black;
-  width:500px;
+  border-radius: 10px;
+  color: black;
+  width: 500px;
 }
 
 .personPic {
   text-align: center;
 }
 
-.contactInfo{
+.contactInfo {
   text-align: left;
+}
+
+.nameLogoMini {
+max-height: 40px;
+}
+
+.nameLogo{
+  max-height:75px;
 }
 
 .button,
@@ -133,6 +141,33 @@ h2 {
   text-align: center;
 }
 
+nav{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+nav a{
+text-decoration: none;
+color:black;
+font-weight: bold;
+}
+
+nav li.active a, nav a:hover{
+  color:#e45826;
+}
+
+nav ul{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
+}
+
 @media (max-width: 700px) {
   .weatherProject,
   .potatoProject,
@@ -144,7 +179,7 @@ h2 {
 @media (max-width: 600px) {
   .content,
   .about-container,
-  .content-container{
+  .content-container {
     text-align: center;
   }
 }
