@@ -82,6 +82,10 @@ h2 {
   text-align: center;
 }
 
+.contactInfo{
+  text-align: left;
+}
+
 .button,
 .btn {
   background-color: var(--secondary-color);
