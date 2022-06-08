@@ -1,54 +1,68 @@
 :root {
-  --primary-color: cornflowerblue;
-  --secondary-color: #f0a500;
-  --accent-color: #e45826;
+  --primary-color: #8eb2ac;
+  --secondary-color: #ba883d;
+  --accent-color: #c7c4a3;
+  --secondary-accent-color: #fefde9;
   --heading-font-family: "Abril Fatface", cursive;
   --subheading-font-family: "Zilla Slab", serif;
   --primary-font-family: "Jost", sans-serif;
 }
 
 body {
-  /*background-image: url(https://c.neevacdn.net/image/fetch/s--yw3dug0j--/https%3A//www.photos-public-domain.com/wp-content/uploads/2011/09/brown-woven-straw-texture.jpg?savepath=brown-woven-straw-texture.jpg);*/
-  background-color: var(--primary-color);
+  background-image: url(https://c.neevacdn.net/image/fetch/s--yw3dug0j--/https%3A//www.photos-public-domain.com/wp-content/uploads/2011/09/brown-woven-straw-texture.jpg?savepath=brown-woven-straw-texture.jpg);
 }
 
 h1 {
   font-family: var(--subheading-font-family);
   font-weight: lighter;
+  color: var(--secondary-accent-color);
 }
 
 h2 {
   font-family: var(--heading-font-family);
   font-weight: 100px;
   font-size: 45px;
+  color: var(--secondary-accent-color);
 }
 
 .hero {
   text-align: center;
-  background-color: black;
-  color: white;
+  background: rgb(78, 68, 35);
+  background: linear-gradient(
+    323deg,
+    rgba(78, 68, 35, 1) 0%,
+    rgba(186, 136, 61, 1) 26%,
+    rgba(199, 196, 163, 1) 81%
+  );
+  color: var(--secondary-accent-color);
+  border-radius: 25px;
+  width: max-content;
 }
 
 .content h1 {
   font-size: 50px;
   line-height: 50px;
   font-family: var(--subheading-font-family);
+  color: var(--secondary-accent-color);
 }
 
 .content h2 {
   font-size: 40px;
   font-weight: lighter;
+  color: var(--secondary-accent-color);
 }
 
 .content h3 {
   font-size: 24px;
   font-family: var(--heading-font-family);
   line-height: 1.25;
+  color: var(--secondary-accent-color);
 }
 
 .content p {
   font-size: 18px;
   font-family: var(--primary-font-family);
+  color: var(--secondary-accent-color);
 }
 
 .content-container {
@@ -57,43 +71,71 @@ h2 {
 
 .about-container {
   text-align: left;
+  border-radius: 25px;
 }
 
-.workHeading {
-  text-align: center;
+.aboutContent {
+  background-color: var(--primary-color);
+  color: var(--secondary-accent-color);
+  border-radius: 25px;
 }
 
 .aboutPic {
-  border-radius: 10px;
+  border-radius: 25px;
+  margin: 5px;
 }
-
-.screenshot {
-  border-radius: 10px;
-}
-
-.projectBg {
-  background-color: #e45826;
-  border-width: 3px;
-  border-radius: 10px;
-  color: black;
-  width: 500px;
-}
-
 .personPic {
   text-align: center;
 }
 
+.aboutBtn {
+  background-color: var(--secondary-color);
+  font-family: var(--subheading-font-family);
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--secondary-accent-color);
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 25px;
+}
+
+.aboutBtn:hover {
+  color: var(--primary-color);
+}
+.workHeading {
+  text-align: center;
+}
+
+.screenshot {
+  border-radius: 25px;
+}
+
+.projectBg {
+  background-color: var(--primary-color);
+  border-width: 3px;
+  border-radius: 25px;
+  color: var(--secondary-color);
+  width: 500px;
+}
+
 .contactInfo {
-  text-align: left;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .nameLogoMini {
-max-height: 40px;
-background-color: bisque;
+  max-height: 60px;
 }
 
-.nameLogo{
-  max-height:75px;
+.nameLogo {
+  max-height: 75px;
 }
 
 .button,
@@ -102,30 +144,27 @@ background-color: bisque;
   font-family: var(--subheading-font-family);
   font-weight: bold;
   font-size: 20px;
-}
-
-.pageBreak {
-  text-align: center;
-  font-family: var(--primary-font-family);
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: fit-content center;
+  border-radius: 25px;
+  margin: 5px;
+  color: var(--secondary-accent-color);
 }
 
 .projects {
-  background-color: black;
+  background-color: #4e44239b;
   font-family: var(--heading-font-family);
-  color: white;
+  color: var(--accent-color);
   text-align: center;
   font-weight: lighter;
+  border-radius: 25px;
 }
 
 .weatherPic,
 .potatoPic,
 .tptPic {
-  background-color: #e45826;
+  background-color: var(--primary-color);
   max-width: 200px;
+  padding: 5px;
+  border-radius: 25px;
 }
 
 .description {
@@ -134,7 +173,7 @@ background-color: bisque;
   font-size: 20px;
   line-height: 22px;
   font-weight: 400px;
-  color: white;
+  color: var(--secondary-accent-color);
 }
 
 .title {
@@ -143,23 +182,27 @@ background-color: bisque;
   text-align: center;
 }
 
-nav{
+nav {
   margin-top: 20px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #4e4423ab;
 }
 
-nav a{
-text-decoration: none;
-color:black;
-font-weight: bold;
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 0px;
 }
 
-nav li.active a, nav a:hover{
-  color:#e45826;
+nav li.active a,
+nav a:hover {
+  color: var(--primary-color);
 }
 
-nav ul{
+nav ul {
   margin: 0px !important;
   padding: 0px !important;
 }
