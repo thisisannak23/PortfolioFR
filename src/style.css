@@ -25,6 +25,10 @@ h2 {
   color: var(--secondary-accent-color);
 }
 
+h4 {
+  font-size: 32px;
+}
+
 .hero {
   text-align: center;
   background: rgb(78, 68, 35);
@@ -36,7 +40,9 @@ h2 {
   );
   color: var(--secondary-accent-color);
   border-radius: 25px;
-  width: max-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content h1 {
@@ -211,6 +217,45 @@ nav li {
   display: inline;
   list-style: none;
   margin-left: 10px;
+}
+
+footer .contactBox {
+  background-color: var(--accent-color);
+  padding: 5px;
+  border-radius: 25px;
+  font-family: var(--subheading-font-family);
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+footer .contactBox p {
+  margin: 0;
+}
+
+footer .socialLinks a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-accent-color);
+  padding: 5px 8px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .socialLinks a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+footer .emailLink {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-family: var(--heading-font-family);
+}
+
+footer .emailLink:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 700px) {
