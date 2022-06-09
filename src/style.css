@@ -227,6 +227,7 @@ footer .contactBox {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+  margin-top: 3px;
 }
 
 footer .contactBox p {
@@ -234,12 +235,14 @@ footer .contactBox p {
 }
 
 footer .socialLinks a {
-  margin: 0 20px;
   color: var(--primary-color);
   background-color: var(--secondary-accent-color);
-  padding: 5px 8px;
+  padding: 5%;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer .socialLinks a:hover {
@@ -256,6 +259,15 @@ footer .emailLink {
 
 footer .emailLink:hover {
   color: var(--primary-color);
+}
+
+footer .footerButtons {
+  background-color:#4e44239b;
+  border-radius: 25px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
 }
 
 @media (max-width: 700px) {
