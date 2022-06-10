@@ -36,34 +36,60 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>About</title>
   </head>
+
   <body>
-    <div class="about-container container d-md-flex">
-      <div class="row m-md-5">
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <img
+          src="src/updatedLogo.png"
+          alt="Logo"
+          class="nameLogo d-none d-md-block"
+        />
+        <img
+          src="src/updatedLogo.png"
+          alt="Logo"
+          class="nameLogoMini d-block d-md-none"
+        />
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li class="active"><a href="/"> About</a></li>
+          <li><a href="work.html"> Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="about-container d-md-flex justify-content-between row">
         <div class="col-md-6 aboutContent">
-          <h1>Hi, I'm Anna Kazanecki</h1>
+          <h1 class="introduction pt-3 text-center text-darker">
+            Hi, I'm Anna Kazanecki
+          </h1>
           <h2>Primary Teacher and Learner from the Midwest</h2>
-          <p>
+          <p class="aboutIntro pb-3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Reprehenderit, a, harum vel totam consequuntur distinctio sed
             quisquam voluptatum soluta cumque aspernatur sunt pariatur fugit
             perferendis illo? Qui quod beatae excepturi?
           </p>
         </div>
-        <div class="col-md-6 personPic">
+
+        <div class="col-sm-6 personPic">
           <img
-            src="src/aboutme.png"
+            src="src/bioCollage.png"
             class="aboutPic"
             alt="bio pic"
-            width="300px"
+            width="500px"
           />
         </div>
-        <div class="buttons">
-          <a href="work.html" class="aboutBtn" type="button"
-            >Check Out What I Can Do</a
-          >
-          <a type="button" class="aboutBtn" href="index.html">Home</a>
-        </div>
+
+        <a
+          href="work.html"
+          class="aboutBtn btn aboutButtons justify-content-center"
+          type="button"
+          >Check Out What I Can Do</a
+        >
+        <a type="button" class="aboutBtn btn" href="index.html">Home</a>
       </div>
-    </div>
+
   </body>
 </html>

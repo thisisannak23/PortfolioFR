@@ -1,119 +1,161 @@
 :root {
-  --primary-color: #8eb2ac;
-  --secondary-color: #ba883d;
-  --accent-color: #c7c4a3;
-  --secondary-accent-color: #fefde9;
+  --primary-color: black;
+  --secondary-color: rgba(252, 199, 49, 1);
+  --accent-color: rgba(205, 77, 47, 1);
+  --secondary-accent-color: black;
   --heading-font-family: "Abril Fatface", cursive;
-  --subheading-font-family: "Zilla Slab", serif;
+  --subheading-font-family: "bnfourthgrademedium", Arial, sans-serif;
   --primary-font-family: "Jost", sans-serif;
-}
-
-body {
-  background-image: url(https://c.neevacdn.net/image/fetch/s--yw3dug0j--/https%3A//www.photos-public-domain.com/wp-content/uploads/2011/09/brown-woven-straw-texture.jpg?savepath=brown-woven-straw-texture.jpg);
 }
 
 h1 {
   font-family: var(--subheading-font-family);
   font-weight: lighter;
-  color: var(--secondary-accent-color);
+  color: var(--primary-color);
 }
 
 h2 {
   font-family: var(--heading-font-family);
   font-weight: 100px;
   font-size: 45px;
-  color: var(--secondary-accent-color);
+  color: var(--secondary-color);
 }
 
 h4 {
   font-size: 32px;
+  font-family: var(--heading-font-family)
+}
+
+nav {
+  padding: 15px;
+  font-family: var(--primary-font-family);
+  margin: 5px;
+}
+
+.nameLogo {
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+nav li.active a,
+nav a:hover {
+  color: black;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
 }
 
 .hero {
   text-align: center;
-  background: rgb(78, 68, 35);
-  background: linear-gradient(
-    323deg,
-    rgba(78, 68, 35, 1) 0%,
-    rgba(186, 136, 61, 1) 26%,
-    rgba(199, 196, 163, 1) 81%
-  );
-  color: var(--secondary-accent-color);
+  color: var(--secondary-color);
   border-radius: 25px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--primary-color);
+}
+
+.hero h1 {
+  color: var(--accent-color);
 }
 
 .content h1 {
   font-size: 50px;
   line-height: 50px;
-  font-family: var(--subheading-font-family);
-  color: var(--secondary-accent-color);
+  font-weight: bold;
 }
 
 .content h2 {
-  font-size: 40px;
   font-weight: lighter;
-  color: var(--secondary-accent-color);
 }
 
 .content h3 {
   font-size: 24px;
   font-family: var(--heading-font-family);
   line-height: 1.25;
-  color: var(--secondary-accent-color);
 }
 
 .content p {
   font-size: 18px;
   font-family: var(--primary-font-family);
-  color: var(--secondary-accent-color);
+}
+
+.content h2, h3, p{
+color: var(--accent-color);
 }
 
 .content-container {
   text-align: center;
 }
 
-.about-container {
-  text-align: left;
-  border-radius: 25px;
+.aboutIntro{
+  color: black;
+  margin-bottom: 5px;
+}
+
+.about-container{
+margin:5px;
+padding:3px;
 }
 
 .aboutContent {
-  background-color: var(--primary-color);
-  color: var(--secondary-accent-color);
+  background-color: var(--accent-color);
   border-radius: 25px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  height: fit-content;
+}
+
+.personPic {
+  text-align: center;
+ /* height: auto;*/
 }
 
 .aboutPic {
-  border-radius: 25px;
-  margin: 5px;
-}
-.personPic {
-  text-align: center;
+ border-radius: 25px;
+   /*margin-left: auto;
+  margin-right: auto; */
 }
 
-.aboutBtn {
+/*.aboutBtn {
+  margin-left:auto;
+  margin-right:auto;
+}
+
   background-color: var(--secondary-color);
   font-family: var(--subheading-font-family);
-  font-size: 20px;
-  text-decoration: none;
-  color: var(--secondary-accent-color);
-  padding: 5px;
-  margin-top: 5px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.25;
   border-radius: 25px;
-}
+  margin: 5px;
+  padding-bottom: 0px;
+  color: var(--primary-color);*/
 
-.aboutBtn:hover {
-  color: var(--primary-color);
-}
 .workHeading {
   text-align: center;
-}
-
-.screenshot {
-  border-radius: 25px;
+  font-family: var(--subheading-font-family);
+  text-overflow: clip;
+  margin-top: 5px;
 }
 
 .projectBg {
@@ -136,6 +178,14 @@ h4 {
   color: var(--secondary-color);
 }
 
+.links:hover {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .nameLogoMini {
   max-height: 60px;
 }
@@ -149,19 +199,72 @@ h4 {
   background-color: var(--secondary-color);
   font-family: var(--subheading-font-family);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 32px;
+  line-height: 1.25;
   border-radius: 25px;
   margin: 5px;
-  color: var(--secondary-accent-color);
+  padding-bottom: 0px;
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .projects {
-  background-color: #4e44239b;
   font-family: var(--heading-font-family);
-  color: var(--accent-color);
   text-align: center;
   font-weight: lighter;
   border-radius: 25px;
+}
+
+.weatherProject {
+  background-image: url(/src/weatherAdobe.png);
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.potatoProject {
+  background-image: url(/src/Potato\ Info.png);
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.tptProject {
+  background-image: url(/src/TSOMK.png);
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.templateProject {
+  background-image: url(/src/20y3.png);
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.sugaredProject {
+  background-image: url(/src/sugaredAdobe.png);
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.ntagbProject {
+  background-image: url(/src/ntagbsnugglyAdobe.png);
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.textBackground {
+  background-color: rgba(0, 0, 0, 0.67);
+  border-radius: 25px;
+  color: white;
 }
 
 .weatherPic,
@@ -178,71 +281,80 @@ h4 {
   text-align: left;
   font-size: 20px;
   line-height: 22px;
-  font-weight: 400px;
-  color: var(--secondary-accent-color);
+  font-weight: 600;
+  color: white;
+}
+
+.foodProjectWork, .weatherProjectWork, .tptProjectWork, .twentyy3Work, .sugaredProjectWork, .ntagbProjectWork{
+    background-size: 100%;
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  border-radius: 25px;
+}
+
+.foodProjectWork {
+  background-image: url(/src/potato\ BG2.png);
+}
+
+.weatherProjectWork {
+  background-image: url(/src/weatherBG.png);
+}
+
+.tptProjectWork {
+  background-image: url(/src/TSOMKBG.png);
+}
+
+.twentyy3Work {
+  background-image: url(/src/23BG.png);
+}
+
+.sugaredProjectWork{
+    background-image: url(/src/sugarBGAdobe.png);
+}
+
+.ntagbProjectWork{
+    background-image: url(/src/NTAGBBG.png);
+}
+
+.projectBg .tools {
+  color: var(--secondary-color);
+  margin: 0;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: lighter;
   text-align: center;
 }
 
-nav {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding: 5px;
-  border-radius: 25px;
-  background-color: #4e4423ab;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-weight: bold;
-  padding: 0px;
-}
-
-nav li.active a,
-nav a:hover {
-  color: var(--primary-color);
-}
-
-nav ul {
-  margin: 0px !important;
-  padding: 0px !important;
-}
-
-nav li {
-  display: inline;
-  list-style: none;
-  margin-left: 10px;
-}
-
 footer .contactBox {
-  background-color: var(--accent-color);
   padding: 5px;
   border-radius: 25px;
-  font-family: var(--subheading-font-family);
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   margin-top: 3px;
+  color: var(--accent-color);
 }
 
 footer .contactBox p {
   margin: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: var(--primary-font-family);
 }
 
 footer .socialLinks a {
   color: var(--primary-color);
-  background-color: var(--secondary-accent-color);
+  background-color: var(--secondary-color);
   padding: 5%;
   border-radius: 50%;
-  transition: all 100ms ease-in-out;
-  width: fit-content;
-  margin-left: auto;
   margin-right: auto;
+  height: fit-content;
+  margin-left: auto;
+  transition: all 100ms ease-in-out;
+  margin-bottom: 4px;
 }
 
 footer .socialLinks a:hover {
@@ -254,7 +366,8 @@ footer .emailLink {
   text-decoration: none;
   color: black;
   font-size: 24px;
-  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-family: var(--primary-font-family);
 }
 
 footer .emailLink:hover {
@@ -262,12 +375,21 @@ footer .emailLink:hover {
 }
 
 footer .footerButtons {
-  background-color:#4e44239b;
+  background-color: var(--accent-color);
   border-radius: 25px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3px;
+  padding: 4px;
+}
+
+@font-face {
+  font-family: "bnfourthgrademedium";
+  src: url("bnfourthgrade-webfont.woff2") format("woff2"),
+    url("bnfourthgrade-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (max-width: 700px) {
