@@ -1,6 +1,6 @@
 :root {
   --primary-color: black;
-  --secondary-color:#faca0f;
+  --secondary-color: #faca0f;
   --accent-color: #ff4040;
   --secondary-accent-color: black;
   --heading-font-family: "Abril Fatface", cursive;
@@ -23,7 +23,7 @@ h2 {
 
 h4 {
   font-size: 32px;
-  font-family: var(--heading-font-family)
+  font-family: var(--heading-font-family);
 }
 
 nav {
@@ -74,8 +74,8 @@ nav li {
   color: var(--accent-color);
 }
 
-.hero p{
-  color:var(--secondary-color);
+.hero p {
+  color: var(--secondary-color);
 }
 
 .content h1 {
@@ -99,22 +99,24 @@ nav li {
   font-family: var(--primary-font-family);
 }
 
-.content h2, h3, p{
-color: var(--accent-color);
+.content h2,
+h3,
+p {
+  color: var(--accent-color);
 }
 
 .content-container {
   text-align: center;
 }
 
-.aboutIntro{
+.aboutIntro {
   color: black;
   margin-bottom: 5px;
 }
 
-.about-container{
-margin:5px;
-padding:3px;
+.about-container {
+  margin: 5px;
+  padding: 3px;
 }
 
 .aboutContent {
@@ -130,30 +132,14 @@ padding:3px;
 }
 
 .personPic {
-  text-align: center;
- /* height: auto;*/
+  height: 100%;
 }
 
 .aboutPic {
- border-radius: 25px;
-   /*margin-left: auto;
-  margin-right: auto; */
-}
-
-/*.aboutBtn {
-  margin-left:auto;
-  margin-right:auto;
-}
-
-  background-color: var(--secondary-color);
-  font-family: var(--subheading-font-family);
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 1.25;
   border-radius: 25px;
-  margin: 5px;
-  padding-bottom: 0px;
-  color: var(--primary-color);*/
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .workHeading {
   text-align: center;
@@ -190,6 +176,21 @@ padding:3px;
   padding-right: 4px;
 }
 
+.github {
+  background-color: var(--secondary-color);
+  line-height: 1.25;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 3px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.github:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
 .nameLogoMini {
   max-height: 60px;
 }
@@ -221,48 +222,33 @@ padding:3px;
   text-align: center;
   font-weight: lighter;
   border-radius: 25px;
+  background-size: 35%;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .weatherProject {
   background-image: url(/src/weatherAdobe.png);
-  background-size: 35%;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .potatoProject {
   background-image: url(/src/Potato\ Info.png);
-  background-size: 35%;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .tptProject {
   background-image: url(/src/TSOMK.png);
-  background-size: 35%;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .templateProject {
   background-image: url(/src/20y3.png);
-  background-size: 35%;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .sugaredProject {
   background-image: url(/src/sugaredAdobe.png);
-  background-size: 35%;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .ntagbProject {
   background-image: url(/src/ntagbsnugglyAdobe.png);
-  background-size: 35%;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 .textBackground {
@@ -289,8 +275,13 @@ padding:3px;
   color: white;
 }
 
-.foodProjectWork, .weatherProjectWork, .tptProjectWork, .twentyy3Work, .sugaredProjectWork, .ntagbProjectWork{
-    background-size: 100%;
+.foodProjectWork,
+.weatherProjectWork,
+.tptProjectWork,
+.twentyy3Work,
+.sugaredProjectWork,
+.ntagbProjectWork {
+  background-size: 100%;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -313,12 +304,12 @@ padding:3px;
   background-image: url(/src/23BG.png);
 }
 
-.sugaredProjectWork{
-    background-image: url(/src/sugarBGAdobe.png);
+.sugaredProjectWork {
+  background-image: url(/src/sugarBGAdobe.png);
 }
 
-.ntagbProjectWork{
-    background-image: url(/src/NTAGBBG.png);
+.ntagbProjectWork {
+  background-image: url(/src/NTAGBBG.png);
 }
 
 .projectBg .tools {
@@ -330,6 +321,7 @@ padding:3px;
   font-size: 36px;
   font-weight: lighter;
   text-align: center;
+  padding: 2px;
 }
 
 footer .contactBox {
@@ -396,15 +388,11 @@ footer .footerButtons {
   font-style: normal;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .weatherProject,
   .potatoProject,
-  .tptProject {
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
+  .tptProject,
+  .personPic,
   .content,
   .about-container,
   .content-container {
