@@ -111,10 +111,12 @@ p {
 
 .about-container {
   display: flex;
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
   padding: 5px;
+  text-align: center;
 }
 
 .aboutContent {
@@ -253,6 +255,7 @@ img {
 .projects {
   font-family: var(--heading-font-family);
   text-align: center;
+  flex-direction: row;
   border-radius: 25px;
   background-size: 35%;
   background-position: center center;
@@ -283,7 +286,7 @@ img {
 }
 
 .ntagbProject {
-  background-image: url(/src/ntagbsnugglyAdobe.png);
+  background-image: url(/src/ntagbbwAdobe.png);
 }
 
 .textBackground {
