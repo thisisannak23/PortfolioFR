@@ -109,14 +109,12 @@ p {
   text-align: center;
 }
 
-.aboutIntro {
-  color: black;
-  margin-bottom: 5px;
-}
-
 .about-container {
-  margin: 5px;
-  padding: 3px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  padding: 5px;
 }
 
 .aboutContent {
@@ -124,21 +122,38 @@ p {
   border-radius: 25px;
   font-size: 18px;
   text-align: left;
-  line-height: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
+  line-height: 1.25;
   height: fit-content;
 }
 
-.personPic {
-  height: 100%;
+.aboutContent h1 {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 600;
+}
+
+.aboutContent h2 {
+  line-height: 1;
+}
+
+.aboutContent p {
+  font-weight: 500;
+  color: var(--primary-color);
 }
 
 .aboutPic {
   border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: var(--primary-color);
+  margin: 5px;
+  padding: 15px;
+}
+
+img {
+  border-radius: 25px;
+}
+
+.selected {
+  align-self: center;
 }
 
 .workHeading {
@@ -176,6 +191,20 @@ p {
   padding-right: 4px;
 }
 
+.sheCodesLink {
+  text-decoration: none;
+  color: var(--primary-font-family);
+  background-color: var(--secondary-color);
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 25px;
+}
+
+.sheCodesLink:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
 .github {
   background-color: var(--secondary-color);
   line-height: 1.25;
@@ -204,7 +233,7 @@ p {
   background-color: var(--secondary-color);
   font-family: var(--subheading-font-family);
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.25;
   border-radius: 25px;
   margin: 5px;
@@ -217,14 +246,20 @@ p {
   background-color: var(--primary-color);
 }
 
+.container {
+  width: 100%;
+}
+
 .projects {
   font-family: var(--heading-font-family);
   text-align: center;
-  font-weight: lighter;
   border-radius: 25px;
   background-size: 35%;
   background-position: center center;
+  background-repeat: repeat;
   background-attachment: fixed;
+  height:max-content;
+  width: fit-content;
 }
 
 .weatherProject {
@@ -257,21 +292,12 @@ p {
   color: white;
 }
 
-.weatherPic,
-.potatoPic,
-.tptPic {
-  background-color: var(--primary-color);
-  max-width: 200px;
-  padding: 5px;
-  border-radius: 25px;
-}
-
 .description {
   font-family: var(--primary-font-family);
   text-align: left;
   font-size: 20px;
   line-height: 22px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
 }
 
@@ -321,10 +347,16 @@ p {
   font-size: 36px;
   font-weight: lighter;
   text-align: center;
-  padding: 2px;
+}
+
+.closingWork {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 footer .contactBox {
+  height: fit-content;
   padding: 5px;
   border-radius: 25px;
   margin-left: auto;
@@ -380,6 +412,18 @@ footer .footerButtons {
   padding: 4px;
 }
 
+.footerBtns {
+  background-color: var(--accent-color);
+  border-radius: 25px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0px;
+}
+
 @font-face {
   font-family: "bnfourthgrademedium";
   src: url("bnfourthgrade-webfont.woff2") format("woff2"),
@@ -389,13 +433,23 @@ footer .footerButtons {
 }
 
 @media (max-width: 600px) {
-  .weatherProject,
-  .potatoProject,
-  .tptProject,
-  .personPic,
-  .content,
-  .about-container,
-  .content-container {
+  .container {
     text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav ul, .indexProjects {
+    flex-direction: column;
+  }
+
+  .about-container,
+  .contactBox {
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
